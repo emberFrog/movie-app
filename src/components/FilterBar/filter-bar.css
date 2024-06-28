@@ -1,0 +1,17 @@
+.filter-bar {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	margin-left: 32px;
+	width: 408px;
+	height: 232px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	border: none;
+}
+
+.filter-title {
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
