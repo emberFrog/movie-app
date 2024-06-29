@@ -1,0 +1,65 @@
+.ticket {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	padding: 24px;
+	margin-bottom: 16px;
+
+	width: 1424px;
+	height: auto;
+
+	background: #ffffff;
+	border-radius: 8px;
+}
+
+.ticket-poster {
+	width: 100px;
+	height: 120px;
+
+	background-color: greenyellow;
+	border-radius: 8px;
+}
+
+.ticket-content {
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.ticket-content-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 16px;
+	align-items: flex-start; /* Установите элементы на верхний край */
+	flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+}
+
+.movie-tags,
+.movie-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.movie-tags {
+	width: 90px;
+	margin-right: 16px;
+}
+
+.movie-info {
+	width: 600px;
+}
+
+p {
+	margin-bottom: 12px;
+}
+
+.movie-rating {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+}

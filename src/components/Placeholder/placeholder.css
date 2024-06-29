@@ -2,6 +2,7 @@
 	font-size: 14px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding: 8px 16px;
 	width: 360px;
 	height: 40px;
@@ -10,6 +11,10 @@
 	border: 1px solid #e1e3e6;
 	border-radius: 8px;
 	margin-bottom: 16px;
+}
+
+.filter-field:active {
+	border: #ff5500;
 }
 
 p {
@@ -46,4 +51,12 @@ li {
 	gap: 8px;
 	height: 42px;
 	font-size: 14px;
+}
+
+img {
+	display: flex;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	margin-right: 16px;
 }

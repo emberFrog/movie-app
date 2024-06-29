@@ -6,14 +6,20 @@ import { FilterBar } from './components/FilterBar/FilterBar'
 import { Searcher } from './components/Searcher/Searcher'
 import { TicketList } from './components/TicketList/TicketList'
 
+import './App.css'
+
 function App() {
 	return (
 		// <Provider store={store}>
 		<>
 			<Header />
-			<FilterBar />
-			<Searcher />
-			{/* <TicketList /> */}
+			<div className='app-content'>
+				<FilterBar />
+				<div className='app-main'>
+					<Searcher />
+					<TicketList />
+				</div>
+			</div>
 		</>
 
 		// </Provider>

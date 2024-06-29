@@ -1,3 +1,11 @@
+import { TicketCard } from '../TicketCard/TicketCard'
+
 export const TicketList = () => {
-	return <div>TicketList</div>
+	return (
+		<section>
+			<TicketCard />
+			<TicketCard />
+			<TicketCard />
+		</section>
+	)
 }

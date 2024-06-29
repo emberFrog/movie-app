@@ -16,8 +16,17 @@ export const Placeholder = ({
 			<div
 				className='filter-field'
 				onClick={() => setIsListVisible(!isListVisible)}
+				style={isListVisible ? { border: '1px solid #FF5500' } : {}}
 			>
 				{`Выберите ${mark.toLowerCase().split(' ')[0]}`}
+				{isListVisible ? (
+					<img src='../../assets/Filter/arrow-square-up.svg' alt='arrow up' />
+				) : (
+					<img
+						src='../../assets/Filter/arrow-square-down.svg'
+						alt='arrow down'
+					/>
+				)}
 			</div>
 			{isListVisible && (
 				<div className='placeholder-list'>

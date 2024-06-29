@@ -1,0 +1,16 @@
+input {
+	display: flex;
+	align-items: center;
+	padding: 12px;
+	margin-bottom: 16px;
+
+	width: 400px;
+	height: 40px;
+
+	border-radius: 8px;
+	border: none;
+
+	font-size: 14px;
+	font-family: 'Roboto';
+	color: #999fa6;
+}
