@@ -3,7 +3,12 @@ import styles from './component.module.css'
 export const Searcher = () => {
 	return (
 		<div className={styles.searcher}>
-			<input type='search' placeholder='Название фильма'></input>
+			<img className={styles.icon} src='../../assets/img/input/Icon.svg' />
+			<input
+				className={styles.searcherInput}
+				type='search'
+				placeholder='Название фильма'
+			></input>
 		</div>
 	)
 }
