@@ -1,4 +1,4 @@
-import { TicketCard } from '../TicketCard/TicketCard'
+import { TicketCard } from '../TicketCard/component'
 
 export const TicketList = () => {
 	return (
@@ -6,6 +6,17 @@ export const TicketList = () => {
 			<TicketCard />
 			<TicketCard />
 			<TicketCard />
+			<TicketCard />
+			<TicketCard />
+			<TicketCard />
+			<TicketCard />
+			<TicketCard />
+			<TicketCard />
+			<TicketCard />
+
+			{/* {tickets.map((movieCard: { id: Key | null | undefined }) => (
+				<TicketCard key={movieCard.id} />
+			))} */}
 		</section>
 	)
 }

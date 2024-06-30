@@ -15,6 +15,7 @@
 .ticket-poster {
 	width: 100px;
 	height: 120px;
+	margin-right: 24px;
 
 	background-color: greenyellow;
 	border-radius: 8px;

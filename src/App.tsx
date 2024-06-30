@@ -1,28 +1,27 @@
-// import { Provider } from 'react-redux'
-// import { store } from './redux/store'
+import { useState } from 'react'
 
-import { Header } from './components/Header/Header'
-import { FilterBar } from './components/FilterBar/FilterBar'
-import { Searcher } from './components/Searcher/Searcher'
-import { TicketList } from './components/TicketList/TicketList'
+import { Header } from './components/Header/component.jsx'
+import { Routes, Route } from 'react-router-dom'
+import { UserContextProvider } from './contexts/user.jsx'
+
+import { Home } from './pages/Home'
+import { Movie } from './pages/Movie'
 
 import './App.css'
+import { NotFound } from './pages/NotFound.js'
 
 function App() {
 	return (
-		// <Provider store={store}>
-		<>
+		<UserContextProvider>
 			<Header />
 			<div className='app-content'>
-				<FilterBar />
-				<div className='app-main'>
-					<Searcher />
-					<TicketList />
-				</div>
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/movie/:id' element={<Movie />} />
+					<Route path='*' element={<NotFound />} />
+				</Routes>
 			</div>
-		</>
-
-		// </Provider>
+		</UserContextProvider>
 	)
 }
 
